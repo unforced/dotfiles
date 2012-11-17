@@ -72,3 +72,7 @@ endif
 
 " For Ctrl+P
 let g:ctrlp_map = '<c-t>'
+
+" For tabbing selection
+vmap <tab> >gv
+vmap <S-tab> <gv

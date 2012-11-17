@@ -1,0 +1,2 @@
+#!/bin/sh
+erb $1 | sh

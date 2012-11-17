@@ -1,7 +1,6 @@
 [user]
-  gerrit = tom
-  name = Tom Dooner
-  email = tom@causes.com
+  name = Aaron Neyer
+  email = aaronneyer@gmail.com
 [help]
   autocorrect = 10
 [log]
@@ -26,7 +25,7 @@
   # see `man git-apply' for other options
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /home/aaron/.gitignore
   # global gitignore, useful for hiding editor files
 
 [alias]

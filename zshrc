@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="skaro"
+ZSH_THEME="fox"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -15,9 +15,8 @@ alias c="bundle exec rails console"
 alias rake="bundle exec rake"
 alias g10="git log --pretty --oneline --graph -10"
 alias gr="git fetch && git rebase origin/master"
-alias restart_causes="kill -USR2 \`cat /var/run/philotic/pids/unicorn_causes.pid\`"
-alias restart_wishes="kill -USR2 \`cat /var/run/philotic/pids/unicorn_wishes.pid\`"
 alias window="tmux rename-window"
+source $HOME/.aliases
 
 # Set up ssh-reagent to streamline timed-out sessions.
 ssh-reagent () {

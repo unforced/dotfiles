@@ -26,8 +26,12 @@ install_symlink() {
 
 ####
 
-for dotfile in `ls | grep -v install`; do
+for dotfile in `ls | grep -v install | grep -v custom_scripts`; do
   install_symlink "$HOME/.${dotfile}" $DOTDIR/$dotfile
+done
+
+for script in `ls custom_scripts`; do
+  sudo ln -s "$DOTDIR/custom_scripts/$script" /usr/local/bin/$script
 done
 
 if which git > /dev/null; then
