@@ -11,3 +11,11 @@ Host ec2
 Host laptop
   Hostname aneyerlaptop.case.edu
   User aaron
+
+Host newec2
+  Hostname 23.20.24.82
+  User aaron
+
+Host octavian
+  Hostname octavian.mimsoftware.com
+  User aneyer

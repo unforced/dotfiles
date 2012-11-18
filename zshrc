@@ -16,7 +16,6 @@ alias rake="bundle exec rake"
 alias g10="git log --pretty --oneline --graph -10"
 alias gr="git fetch && git rebase origin/master"
 alias window="tmux rename-window"
-source $HOME/.aliases
 
 # Set up ssh-reagent to streamline timed-out sessions.
 ssh-reagent () {
@@ -49,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git rvm bundler nyan)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -63,6 +62,8 @@ export GIT_EDITOR
 set -o vi
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+bindkey '^?' backward-delete-char
+bindkey '^[[3~' delete-char
 
 # Customize to your needs...
 export PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:$HOME/bin
