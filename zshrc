@@ -51,6 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git rvm bundler nyan)
 
 source $ZSH/oh-my-zsh.sh
+source .aliases
 
 TERM=xterm-256color
 EDITOR=`which vim`
@@ -66,9 +67,11 @@ bindkey '^?' backward-delete-char
 bindkey '^[[3~' delete-char
 
 # Customize to your needs...
-export PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:$HOME/bin
+export PATH=/usr/local/bin:/bin:/usr/bin:$HOME/bin:$PATH
 
 if [ -d $HOME/.rbenv/bin ] ; then
    export PATH=$HOME/.rbenv/bin:$PATH
    eval "$(rbenv init -)"
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
