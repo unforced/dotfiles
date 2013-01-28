@@ -19,3 +19,19 @@ Host newec2
 Host octavian
   Hostname octavian.mimsoftware.com
   User aneyer
+
+Host krall
+  Hostname krall.case.edu
+  User aaron
+
+Host minecraft
+  Hostname minecraft.case.edu
+  User aaron
+
+Host irc
+  Hostname irc.case.edu
+  User aaron
+
+Host people
+  Hostname acm-people.case.edu
+  User aaron
