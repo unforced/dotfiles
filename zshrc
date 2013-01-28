@@ -43,15 +43,16 @@ ssh-reagent () {
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rvm bundler nyan)
+plugins=(git rvm nyan)
 
 source $ZSH/oh-my-zsh.sh
-source .aliases
+unsetopt correct_all
+source $HOME/.aliases
 
 TERM=xterm-256color
 EDITOR=`which vim`
@@ -60,18 +61,18 @@ export TERM
 export GIT_EDITOR
 
 # Use Vi key bindings for faster navigation
-set -o vi
-bindkey -v
-bindkey '^R' history-incremental-search-backward
-bindkey '^?' backward-delete-char
-bindkey '^[[3~' delete-char
+#set -o vi
+#bindkey -v
+#bindkey '^R' history-incremental-search-backward
+#bindkey '^?' backward-delete-char
+#bindkey '^[[3~' delete-char
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/bin:/usr/bin:$HOME/bin:$PATH
 
-if [ -d $HOME/.rbenv/bin ] ; then
-   export PATH=$HOME/.rbenv/bin:$PATH
-   eval "$(rbenv init -)"
-fi
+#if [ -d $HOME/.rbenv/bin ] ; then
+#   export PATH=$HOME/.rbenv/bin:$PATH
+#   eval "$(rbenv init -)"
+#fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

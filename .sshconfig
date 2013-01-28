@@ -1,0 +1,21 @@
+VisualHostKey = yes
+
+Host bingo
+  HostName bingo.case.edu
+  User aaron
+
+Host ec2
+  HostName aaronneyer.com
+  User aaron
+
+Host laptop
+  Hostname aneyerlaptop.case.edu
+  User aaron
+
+Host newec2
+  Hostname 107.22.85.114
+  User aaron
+
+Host octavian
+  Hostname octavian.mimsoftware.com
+  User aneyer

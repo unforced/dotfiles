@@ -26,9 +26,11 @@ install_symlink() {
 
 ####
 
-for dotfile in `ls | grep -v install | grep -v custom_scripts`; do
+for dotfile in `ls | grep -v install | grep -v custom_scripts | grep -v sshconfig`; do
   install_symlink "$HOME/.${dotfile}" $DOTDIR/$dotfile
 done
+
+install_symlink "$HOME/.ssh/config" $DOTDIR/sshconfig
 
 for script in `ls custom_scripts`; do
   sudo ln -s "$DOTDIR/custom_scripts/$script" /usr/local/bin/$script

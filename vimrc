@@ -43,7 +43,9 @@ command Q q
 command WQ wq
 command Wq wq
 
-" Spellcheck, but not very visably. [sic]
+command Kws mark w | %s/\s\+$// | 'w
+
+" Spellcheck, but not very visibly.
 set spell
 highlight SpellBad ctermbg=234
 highlight SpellCap ctermbg=234
@@ -76,3 +78,6 @@ let g:ctrlp_map = '<c-t>'
 " For tabbing selection
 vmap <tab> >gv
 vmap <S-tab> <gv
+
+" Removes highlight with return after a search
+nnoremap <CR> :noh<CR><CR>
