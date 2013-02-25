@@ -112,7 +112,6 @@ zstyle ':prezto:module:prompt' theme 'sorin'
    'main' \
    'brackets' \
    'pattern' \
-   'cursor' \
    'root'
 
 #
