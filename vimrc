@@ -51,6 +51,7 @@ highlight SpellBad ctermbg=234
 highlight SpellCap ctermbg=234
 
 " Improve fold colors
+
 highlight Folded ctermbg=234
 
 " Using Vim with a Dvorak keyboard sucks. This tries to make it suck less by
@@ -73,11 +74,16 @@ if has('persistent_undo')
 endif
 
 " For Ctrl+P
-let g:ctrlp_map = '<c-t>'
+let g:ctrlp_map = '<Leader>t'
 
 " For tabbing selection
 vmap <tab> >gv
 vmap <S-tab> <gv
 
+nmap <Leader>p :set paste!<CR>
+nmap <Leader>l :setlocal number!<CR>
+nmap <Leader>s :SyntasticToggleMode<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
+
 " Removes highlight with return after a search
-nnoremap <CR> :noh<CR><CR>
+nnoremap <CR> :noh<CR>:<backspace>
