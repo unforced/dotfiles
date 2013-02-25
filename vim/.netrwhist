@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/aaron/Dropbox/Documents/Code/name_check_rails'
 let g:netrw_dirhist_2='/etc/rc0.d'
 let g:netrw_dirhist_3='/home/aaron/Dropbox/Documents/Code/oldham-bingo'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/aaron/Dropbox/Documents/Code/dotfiles/oh-my-zsh/cus
 let g:netrw_dirhist_5='/home/aaron/Dropbox/Documents/Code/dotfiles/oh-my-zsh/plugins/git'
 let g:netrw_dirhist_6='/home/aaron/Dropbox/Documents/Code/dotfiles/oh-my-zsh/custom/example'
 let g:netrw_dirhist_7='/etc/nginx'
+let g:netrw_dirhist_8='/home/aaron/Dropbox/Documents/Code/Pi/public'

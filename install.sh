@@ -30,6 +30,8 @@ for dotfile in `ls | grep -vE "install|sshconfig|README"`; do
   install_symlink "$HOME/.${dotfile}" $DOTDIR/$dotfile
 done
 
+install_symlink "$HOME/.ssh/config" "$DOTDIR/sshconfig"
+
 if which git > /dev/null; then
   git submodule update --init
   git submodule update #Was being buggy for some reason so added this
