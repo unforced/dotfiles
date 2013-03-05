@@ -34,3 +34,6 @@
 [submodule "vim/bundle/nerdtree"]
   path = vim/bundle/nerdtree
   url = git://github.com/scrooloose/nerdtree
+[submodule "vim/bundle/gitgutter"]
+  path = vim/bundle/gitgutter
+  path = git://github.com/airblade/vim-gitgutter.git

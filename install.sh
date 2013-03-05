@@ -33,8 +33,7 @@ done
 install_symlink "$HOME/.ssh/config" "$DOTDIR/sshconfig"
 
 if which git > /dev/null; then
-  git submodule update --init
-  git submodule update #Was being buggy for some reason so added this
+  git submodule update --init --recursive
   git config --global core.excludesfile $HOME/.gitignore
 else
   echo "Please install git and run 'git submodule update --init'"
