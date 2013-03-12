@@ -37,6 +37,7 @@ alias rake="bundle exec rake"
 alias g10="git log --pretty --oneline --graph -10"
 alias gr="git fetch && git rebase origin/master"
 alias window="tmux rename-window"
+alias vact=". ./venv/bin/activate"
 unalias rm
 unalias cp
 
@@ -54,7 +55,7 @@ setopt sharehistory
 unsetopt notify
 zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
-compinit
+compinit -u
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 

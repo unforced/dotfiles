@@ -12,17 +12,6 @@
 [pager]
   show-branch = true
   status = true
-[rebase]
-  autosquash = true
-[rerere]
-  enabled = true
-[branch "master"]
-  rebase = true
-
-[apply]
-  whitespace = fix
-  # automagically fix whitespace
-  # see `man git-apply' for other options
 
 [core]
 	excludesfile = /home/aaron/.gitignore

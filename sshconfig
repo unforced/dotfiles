@@ -35,3 +35,15 @@ Host irc
 Host people
   Hostname acm-people.case.edu
   User aaron
+
+Host pi
+  Hostname hvz.case.edu
+  User pi
+
+Host google
+  Hostname google.case.edu
+  User aaron
+
+Host projects
+  Hostname acm-projects.case.edu
+  User aaron
