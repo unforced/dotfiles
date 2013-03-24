@@ -47,3 +47,7 @@ Host google
 Host projects
   Hostname acm-projects.case.edu
   User aaron
+
+Host linab
+  Hostname eecslinab4.case.edu
+  User agn31
