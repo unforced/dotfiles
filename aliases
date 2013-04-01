@@ -1,10 +1,28 @@
 alias ack='ack-grep'
+alias ls='ls --group-directories-first --color=auto'
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
+alias g='git'
 alias tmr='tmux attach-session -t'
 alias tml='tmux ls'
 alias tmn='tmux new -s'
 alias vncserver='ssh -f -L 5900:localhost:5900 aaron@bingo x11vnc -safer -localhost -nopw -once -display :0; sleep 3; vncviewer localhost:0'
 alias startvnc='x11vnc -safer -localhost -nopw -once -display :0;'
-alias rkt="racket -il readline"
+
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+
+activate_virtualenv() {
+  if [ -f env/bin/activate ]; then . env/bin/activate;
+  elif [ -f ../env/bin/activate ]; then . ../env/bin/activate;
+  elif [ -f ../../env/bin/activate ]; then . ../../env/bin/activate;
+  elif [ -f ../../../env/bin/activate ]; then . ../../../env/bin/activate;
+  else echo 'No env found';
+  fi
+}
+mcd() { mkdir -p $1 && cd $1; }
+#Shows directory name in window on startup and on every directory change
+print -Pn "\e]2;%n@%M: %~\a"
+chpwd() { print -Pn "\e]2;%n@%M: %~\a" }

@@ -51,3 +51,7 @@ Host projects
 Host linab
   Hostname eecslinab4.case.edu
   User agn31
+
+Host ibm
+  Hostname ibm.case.edu
+  User aaron
