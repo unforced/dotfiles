@@ -55,3 +55,7 @@ Host linab
 Host ibm
   Hostname ibm.case.edu
   User aaron
+
+Host hvz
+  Hostname hvz.case.edu
+  User aaron

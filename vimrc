@@ -37,13 +37,9 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * redraw!
 
-" Map :Wq, :WQ, :Q, :W to their appropriately-cased counterparts
-command W w
-command Q q
-command WQ wq
-command Wq wq
-
 command Kws mark w | %s/\s\+$// | 'w
+
+nnoremap <silent> <F9> :w<CR>:SyntasticCheck<CR>
 
 " Spellcheck, but not very visibly.
 set spell
@@ -51,14 +47,7 @@ highlight SpellBad ctermbg=234
 highlight SpellCap ctermbg=234
 
 " Improve fold colors
-
 highlight Folded ctermbg=234
-
-" Using Vim with a Dvorak keyboard sucks. This tries to make it suck less by
-" binding htns to hjkl.
-"map t j
-"map n k
-"map s l
 
 " Navigate tabs with the tab key. It seems to make sense
 " and <Tab> isn't used for anything else.
@@ -82,8 +71,9 @@ vmap <S-tab> <gv
 
 nmap <Leader>p :set paste!<CR>
 nmap <Leader>l :setlocal number!<CR>
-nmap <Leader>s :SyntasticToggleMode<CR>
 nmap <Leader>e :NERDTreeToggle<CR>
+
+let g:syntastic_mode_map = {'mode': 'passive'}
 
 " Removes highlight with return after a search
 nnoremap <CR> :noh<CR>:<backspace>
