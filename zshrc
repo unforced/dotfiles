@@ -17,6 +17,7 @@ setopt inc_append_history
 
 zle -N edit-command-line
 bindkey '\C-x\C-e' edit-command-line
+bindkey -e
 
 #Better completion
 zstyle ':completion:*' use-cache on

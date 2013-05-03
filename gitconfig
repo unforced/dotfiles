@@ -6,7 +6,7 @@
 [log]
   decorate = short
 [color]
-  ui = auto
+	ui = true
 [merge]
   log = 1000
 [pager]
@@ -15,7 +15,7 @@
 
 [core]
 	excludesfile = /home/aaron/.gitignore
-	pager = cat
+	pager = less -r
   # global gitignore, useful for hiding editor files
 
 [alias]
@@ -102,3 +102,5 @@
   ten = log --oneline --graph -10
 
   ridof = !sh -c 'wc -l $1 && git rm $1' -
+[push]
+	default = simple
