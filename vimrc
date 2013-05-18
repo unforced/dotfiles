@@ -19,7 +19,7 @@ set nocompatible
 set number
 set scrolloff=3
 set softtabstop=2
-set shiftwidth=42
+set shiftwidth=2
 set showtabline=2
 set sidescrolloff=3
 set sw=2
@@ -77,3 +77,10 @@ let g:syntastic_mode_map = {'mode': 'passive'}
 
 " Removes highlight with return after a search
 nnoremap <CR> :noh<CR>:<backspace>
+
+" Custom settings by files
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType go setlocal noexpandtab shiftwidth=2 tabstop=2
