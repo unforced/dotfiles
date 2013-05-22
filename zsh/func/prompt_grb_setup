@@ -163,12 +163,12 @@ prompt_grb_pwd() {
   FOO=(${(s:/:)FOO})
   LEN=$#FOO
   STR=
-  if [ $LEN != 1 ];
+  if [ $LEN -gt 1 ];
   then
     for i in {1..`expr $LEN - 1`}
     do
       TEMP=$FOO[i]
-      STR+=${TEMP:0:1}
+      STR+=${TEMP[0,1]}
       STR+="/"
     done
   fi

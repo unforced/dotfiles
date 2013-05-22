@@ -84,3 +84,8 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType go setlocal noexpandtab shiftwidth=2 tabstop=2
+
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
