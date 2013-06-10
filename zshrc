@@ -31,7 +31,6 @@ source /etc/zsh_command_not_found
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-
 #Functions
 
 ssh-reagent () {
@@ -46,3 +45,5 @@ ssh-reagent () {
   done
   echo "Cannot find ssh agent - maybe you should reconnect and forward it?"
 }
+
+eval "$(rbenv init -)"

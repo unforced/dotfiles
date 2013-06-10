@@ -78,6 +78,8 @@ nmap <Leader>e :NERDTreeToggle<CR>
 
 let g:syntastic_mode_map = {'mode': 'passive'}
 
+let g:ycm_filetype_whitelist = {}
+
 " Removes highlight with return after a search
 nnoremap <CR> :noh<CR>:<backspace>
 
