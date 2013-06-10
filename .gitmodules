@@ -55,3 +55,9 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = git://github.com/Valloric/YouCompleteMe
+[submodule "vim/bundle/vim-scala"]
+	path = vim/bundle/vim-scala
+	url = git://github.com/derekwyatt/vim-scala
