@@ -29,7 +29,7 @@ set ts=2
 set wildmenu
 set wildmode=longest,list,full
 syntax on
-colorscheme grb256
+colorscheme slate
 
 highlight ColorColumn ctermbg=234
 
@@ -66,7 +66,6 @@ endif
 " For Ctrl+P
 let g:ctrlp_map = '<C-p>'
 nmap <C-t> :tabe<CR>
-nmap <C-w> :q<CR>
 
 
 " For tabbing selection
