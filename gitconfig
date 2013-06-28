@@ -23,6 +23,7 @@
   ci = commit
   co = checkout
   au = add -u
+  su = submodule update
 
   oneline = log --oneline
   # e14d631 (HEAD, origin/master, origin/HEAD, master) Merge branch 'maint'

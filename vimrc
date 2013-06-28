@@ -64,7 +64,13 @@ if has('persistent_undo')
 endif
 
 " For Ctrl+P
-let g:ctrlp_map = '<C-p>'
+" Temporarily disable while I'm trying CommandT
+let g:ctrlp_map = ''
+"
+" For Command-T
+nmap <C-p> :CommandT<CR>
+let g:CommandTMaxHeight=10
+
 nmap <C-t> :tabe<CR>
 
 
