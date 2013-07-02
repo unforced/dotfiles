@@ -1,5 +1,9 @@
 alias ack='ack-grep'
-alias ls='ls --group-directories-first --color=auto'
+if [[ `uname` =~ Linux ]]; then
+  alias ls='ls --group-directories-first --color=auto'
+else
+  alias ls='ls -G'
+fi
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'

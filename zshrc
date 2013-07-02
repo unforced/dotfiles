@@ -27,7 +27,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*:*:kill:*:processes' command 'ps --forest -e -o pid,user,tty,cmd'
 
 source $HOME/.aliases
-source /etc/zsh_command_not_found
+[[ `uname -a` =~ Ubuntu ]] && source /etc/zsh_command_not_found
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
