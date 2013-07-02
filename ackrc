@@ -1,16 +1,12 @@
---pager=less -FRSX
 --sort-files
---type-add=ruby=.builder
---type-add=ruby=.rake
---type-add=ruby=.feature
---type-set=css=.css,.scss
---type-set=haml=.haml
---type-set=puppet=.pp
---type-set=ragel=.rl
---type-set=sass=.sass
---type-set=txt=.txt
---type-set=walrus=.tmpl
---type-set=wikitext=.wikitext
---type-set=xcconfig=.xcconfig
---ignore-dir=coverage
+--pager=$PAGER
 --ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=data
+--ignore-dir=doc
+--ignore-dir=coverage
+--ignore-dir=.meteor/local
+--ignore-dir=_site
+--type-add=css=.sass,.scss
+--type-add=ruby=.erb,.haml,.rake,.rb,.rhtml,.rjs,.rxml,.rsel,.spec

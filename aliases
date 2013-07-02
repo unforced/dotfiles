@@ -1,4 +1,4 @@
-alias ack='ack-grep'
+[[ `uname -a` =~ Ubuntu ]] && alias ack='ack-grep'
 if [[ `uname` =~ Linux ]]; then
   alias ls='ls --group-directories-first --color=auto'
 else
