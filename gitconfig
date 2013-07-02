@@ -2,7 +2,7 @@
   name = Aaron Neyer
   email = aaronneyer@gmail.com
 [github]
-  user = Aaronneyerj
+  user = Aaronneyer
 [help]
   autocorrect = 10
 [log]
@@ -19,7 +19,7 @@
 [apply]
   whitespace = fix
 [core]
-  excludesfile = /Users/aaronneyer/.gitignore
+  excludesfile = /home/aneyer/.gitignore
   pager = less -r
   # global gitignore, useful for hiding editor files
 [push]
