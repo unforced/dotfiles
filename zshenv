@@ -7,4 +7,8 @@ if [[ ! ($PATH =~ $NEWPATH) ]]; then
   export PATH=$NEWPATH:$PATH
 fi
 export GOPATH=$HOME/go
-export GOROOT=/usr/lib/go
+if [[ `uname` =~ Darwin ]]; then
+  export GOROOT=/usr/local/Cellar/go/1.1.1
+else
+  export GOROOT=/usr/lib/go
+fi
