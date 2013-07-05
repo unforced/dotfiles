@@ -19,7 +19,7 @@
 [apply]
   whitespace = fix
 [core]
-  excludesfile = /home/aneyer/.gitignore
+  excludesfile = ~/.gitignore
   pager = less -r
   # global gitignore, useful for hiding editor files
 [push]
