@@ -9,7 +9,7 @@ HISTFILE=~/.history
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 
-export TERM='xterm-color'
+export TERM='xterm-256color'
 export EDITOR='vim'
 set -o emacs
 
@@ -46,4 +46,4 @@ ssh-reagent () {
   echo "Cannot find ssh agent - maybe you should reconnect and forward it?"
 }
 
-eval "$(rbenv init -)"
+which rbenv && eval "$(rbenv init -)"
