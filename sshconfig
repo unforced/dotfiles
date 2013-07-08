@@ -1,56 +1,44 @@
 VisualHostKey = yes
 
-Host bingo
-  HostName bingo.case.edu
-  User aaron
-
 Host ec2
   HostName aaronneyer.com
   User aaron
-
-Host laptop
-  Hostname aneyerlaptop.case.edu
-  User aaron
-
-Host newec2
-  Hostname 107.22.85.114
-  User aaron
-
-Host octavian
-  Hostname octavian.mimsoftware.com
-  User aneyer
+  ForwardAgent yes
 
 Host krall
   Hostname krall.case.edu
   User aaron
+  ForwardAgent yes
 
 Host minecraft
   Hostname minecraft.case.edu
   User aaron
+  ForwardAgent yes
 
 Host irc
   Hostname irc.case.edu
   User aaron
+  ForwardAgent yes
 
 Host people
-  Hostname acm-people.case.edu
+  Hostname people.acm.case.edu
   User aaron
-
-Host pi
-  Hostname hvz.case.edu
-  User pi
-
-Host google
-  Hostname google.case.edu
-  User aaron
+  ForwardAgent yes
 
 Host projects
-  Hostname acm-projects.case.edu
+  Hostname projects.acm.case.edu
   User aaron
+  ForwardAgent yes
 
 Host linab
   Hostname eecslinab4.case.edu
   User agn31
+  ForwardAgent yes
+
+Host google
+  Hostname google.case.edu
+  User aaron
+  ForwardAgent yes
 
 Host ibm
   Hostname ibm.case.edu
@@ -59,3 +47,9 @@ Host ibm
 Host hvz
   Hostname hvz.case.edu
   User aaron
+  ForwardAgent yes
+
+Host pol
+  Hostname pol.corp.causes.com
+  User aneyer
+  ForwardAgent yes
