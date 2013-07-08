@@ -46,4 +46,4 @@ ssh-reagent () {
   echo "Cannot find ssh agent - maybe you should reconnect and forward it?"
 }
 
-which rbenv && eval "$(rbenv init -)"
+which rbenv > /dev/null && eval "$(rbenv init -)"
