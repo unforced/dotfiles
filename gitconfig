@@ -43,3 +43,4 @@
   poh = pull --rebase origin HEAD
   rom = rebase origin/master
   from = !sh -c 'git fetch origin && git rebase origin/master' -
+  wip = commit -m WIP --no-verify
