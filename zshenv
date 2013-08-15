@@ -12,7 +12,9 @@ path=(
   /usr/sbin
   /sbin
 )
+
 export PATH
 typeset -U path
 
 export GOPATH=$HOME/go
+export PAGER='less -FSRX'

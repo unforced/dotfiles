@@ -1,5 +1,5 @@
 --sort-files
---pager=less -FRSX
+--pager=$PAGER
 --ignore-dir=vendor
 --ignore-dir=log
 --ignore-dir=tmp
