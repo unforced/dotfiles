@@ -36,13 +36,13 @@ end
 def submodule_update
   debug "Initializing and updating submodules"
   Dir.chdir(DOT_DIR)
-  `git submodule update --init`
+  system('git submodule update --init --recursive')
   debug "Done"
 end
 
 def update_vim
   debug "Initializing and updating vim bundles"
-  `#{DOT_DIR}/vim/update`
+  system('vim +BundleInstall +qall')
   debug "Done"
 end
 
@@ -93,5 +93,5 @@ end
 
 make_backup_dir
 submodule_update
-update_vim
 symlink_dotfiles
+update_vim
