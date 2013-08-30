@@ -15,12 +15,9 @@ Clone the repo
 git clone git://github.com/Aaronneyer/dotfiles
 ```
 
-Install.
+Install. You will need ruby and vim on your system for this to work.
 
 ```
 cd dotfiles
-./install.sh
+./bootstrap.rb
 ```
-
-The install script is not currently in a full working order, as I need to get
-it to play nicely with my new .vim submodule.
