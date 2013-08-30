@@ -37,11 +37,13 @@ def submodule_update
   debug "Initializing and updating submodules"
   Dir.chdir(DOT_DIR)
   `git submodule update --init`
+  debug "Done"
 end
 
 def update_vim
   debug "Initializing and updating vim bundles"
   `#{DOT_DIR}/vim/update`
+  debug "Done"
 end
 
 def make_backup_dir
@@ -75,13 +77,19 @@ def symlink_dotfile(filename)
   symlink(filename, '.' + filename)
 end
 
+def symlink_ssh
+  FileUtils.mkdir_p File.join(HOME, '.ssh')
+  backup('.ssh/config', '.sshconfig')
+  symlink('sshconfig', '.ssh/config')
+end
+
 def symlink_dotfiles
   DOTFILES.each do |file|
     symlink_dotfile(file)
   end
-  backup('.ssh/config', '.sshconfig')
-  symlink('sshconfig', '.ssh/config')
+  symlink_ssh
 end
+
 
 make_backup_dir
 submodule_update
