@@ -90,7 +90,6 @@ def symlink_dotfiles
   symlink_ssh
 end
 
-
 make_backup_dir
 submodule_update
 symlink_dotfiles
