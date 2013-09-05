@@ -28,14 +28,15 @@
   autosquash = true
   stat = true
 [alias]
-  st = status -sb
+  st = status --short --branch
   ci = commit
   co = checkout
-  au = add -u
+  au = add --update
+  aa = add --all
   su = submodule update --init
   oneline = log --oneline
   graph = log --oneline --graph
-  last = log -1
+  last = log --max-count=1
   patch = add --patch
   amend = commit --amend
   staged = diff --cached
@@ -43,4 +44,4 @@
   poh = pull --rebase origin HEAD
   rom = rebase origin/master
   from = !sh -c 'git fetch origin && git rebase origin/master' -
-  wip = commit -m WIP --no-verify
+  wip = commit --message=WIP --no-verify

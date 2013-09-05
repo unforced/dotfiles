@@ -1,4 +1,5 @@
 [[ `uname -a` =~ Ubuntu ]] && alias ack='ack-grep'
+[[ `uname` =~ Linux ]] && alias open='xdg-open'
 if [[ `uname` =~ Linux ]]; then
   alias ls='ls --group-directories-first --color=auto'
 else
@@ -6,7 +7,7 @@ else
 fi
 alias ll='ls -alFh'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls'
 alias g='git'
 alias tmr='tmux attach-session -t'
 alias tml='tmux ls'
