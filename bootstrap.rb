@@ -23,6 +23,10 @@ OptionParser.new do |opts|
     OPTIONS[:verbose] = true
   end
 
+  opts.on('-s', '--setup', 'Setup system with the most up to date of software (git/tmux)') do
+    OPTIONS[:setup] = true
+  end
+
   opts.on('-h', '--help', 'Show this help message') do
     puts opts
     exit
@@ -90,7 +94,20 @@ def symlink_dotfiles
   symlink_ssh
 end
 
-make_backup_dir
-submodule_update
-symlink_dotfiles
-update_vim
+# TODO: Get something like chef/ansible to set this stuff up.
+def setup_system
+  `sudo apt-get install software-properties-common`
+  `sudo add-apt-repository ppa:pi-rho/dev`
+  `sudo add-apt-repository ppa:git-core/ppa`
+  `sudo apt-get update`
+  `sudo apt-get install tmux git`
+end
+
+if OPTIONS[:setup]
+  setup_system
+else
+  make_backup_dir
+  submodule_update
+  symlink_dotfiles
+  update_vim
+end
