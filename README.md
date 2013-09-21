@@ -21,3 +21,7 @@ Install. You will need ruby and vim on your system for this to work.
 cd dotfiles
 ./bootstrap.rb
 ```
+
+Remove anything specific to me. This will specifically be things in gitconfig
+and sshconfig, but there are lot's of other configurations which will probably
+not fit your use case.

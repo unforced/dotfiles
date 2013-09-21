@@ -5,15 +5,14 @@ if [[ `uname` =~ Linux ]]; then
 else
   alias ls='ls -G'
 fi
-alias ll='ls -alFh'
-alias la='ls -A'
+alias ll='ls -lFh'
+alias la='ls -a'
+alias lla='ll -a' # This is quite literally the laziest alias ever
 alias l='ls'
 alias g='git'
 alias tmr='tmux attach-session -t'
 alias tml='tmux ls'
 alias tmn='tmux new -s'
-alias vncserver='ssh -f -L 5900:localhost:5900 aaron@bingo x11vnc -safer -localhost -nopw -once -display :0; sleep 3; vncviewer localhost:0'
-alias startvnc='x11vnc -safer -localhost -nopw -once -display :0;'
 alias cdg='cd `git rev-parse --show-toplevel`'
 alias z='zeus'
 alias be='bundle exec'
