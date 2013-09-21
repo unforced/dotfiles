@@ -17,6 +17,9 @@ alias cdg='cd `git rev-parse --show-toplevel`'
 alias z='zeus'
 alias be='bundle exec'
 
+alias ag="ag --pager='$PAGER' --ignore-dir=vendor --ignore-dir=log
+  --ignore-dir=tmp"
+
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
