@@ -1,10 +1,9 @@
 setopt PROMPT_SUBST
-autoload -U promptinit compinit zmv edit-command-line ssh-reagent
+autoload -U promptinit compinit zmv edit-command-line ssh-reagent activate_virtualenv
 
 # Set up the prompt (Customized from Gary Bernhardts)
 promptinit
 prompt grb
-
 
 # Appends each command to history immediately after executing
 setopt inc_append_history
