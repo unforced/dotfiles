@@ -96,11 +96,11 @@ end
 
 # TODO: Get something like chef/ansible to set this stuff up.
 def setup_system
-  system('sudo apt-get install software-properties-common')
-  system('sudo add-apt-repository ppa:pi-rho/dev')
-  system('sudo add-apt-repository ppa:git-core/ppa')
-  system('sudo apt-get update')
-  system('sudo apt-get install tmux git')
+  system('sudo apt-get -y install software-properties-common')
+  system('sudo add-apt-repository -y ppa:pi-rho/dev')
+  system('sudo add-apt-repository -y ppa:git-core/ppa')
+  system('sudo apt-get -y update')
+  system('sudo apt-get -y install tmux git')
 end
 
 if OPTIONS[:setup]
