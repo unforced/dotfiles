@@ -32,6 +32,10 @@ git clone git://github.com/Aaronneyer/dotfiles
 ```
 
 Install. You will need ruby and vim on your system for this to work.
+If you are running Ubuntu (Might need 13.10), then you can run
+`./ubuntu-intalls.sh` to get the necessary software. On older versions, you
+will likely need to hunt down PPA's to get the most up to date versions of git
+and tmux.
 
 ```
 cd dotfiles
