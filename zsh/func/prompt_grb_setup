@@ -147,7 +147,8 @@ prompt_grb_setup() {
 
   p_line="$pc[line]%y$pc[reset]"
 
-  PROMPT="$pc[host]%m$pc[reset]"
+  PROMPT="$pc[user]%n@$pc[reset]"
+  PROMPT+="$pc[host]%m$pc[reset]"
   PROMPT+=":$pc[path]\$(prompt_grb_pwd)$pc[reset]"
   PROMPT+="($pc[scm_branch]\$(prompt_grb_scm_branch)$pc[reset])"
   PROMPT+=" $pc[#]\$$pc[reset] "
