@@ -16,6 +16,9 @@ path=(
   /usr/sbin
   /sbin
 )
+
+[[ -a $HOME/vendor/path.zsh ]] && source $HOME/vendor/path.zsh
+
 export PATH
 typeset -U path
 
