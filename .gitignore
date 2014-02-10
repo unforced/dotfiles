@@ -1,6 +1,3 @@
 ssh/*
 zsh/cache
-vim/bundle/*
-!vim/bundle/vundle
-vim/.viminfo
-vim/.netrwhist
+*.tmp
