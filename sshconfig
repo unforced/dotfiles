@@ -1,7 +1,7 @@
 VisualHostKey = yes
 
 Host ec2
-  HostName aaronneyer.com
+  HostName ec2.neyer.io
   User aaron
   ForwardAgent yes
 
