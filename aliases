@@ -10,9 +10,6 @@ alias la='ls -a'
 alias lla='ll -a' # This is quite literally the laziest alias ever
 alias l='ls'
 alias g='git'
-alias tmr='tmux attach-session -t'
-alias tml='tmux ls'
-alias tmn='tmux new -s'
 alias cdg='cd `git rev-parse --show-toplevel`'
 alias z='zeus'
 alias be='bundle exec'
@@ -30,3 +27,21 @@ mcd() { mkdir -p $1 && cd $1; }
 #Shows directory name in window on startup and on every directory change
 print -Pn "\e]2;%n@%M: %~\a"
 chpwd() { print -Pn "\e]2;%n@%M: %~\a" }
+
+tmr() {
+  if [ -z $1 ]; then
+    tmux attach-session
+  else
+    tmux attach-session -t $1
+  fi
+}
+
+tmn() {
+  if [ -z $1 ]; then
+    tmux new
+  else
+    tmux new -s $1
+  fi
+}
+
+alias tml='tmux ls'
