@@ -4,7 +4,7 @@
 [github]
   user = Aaronneyer
 [help]
-  autocorrect = 10
+  autocorrect = 0
 [log]
   decorate = short
 [color]
